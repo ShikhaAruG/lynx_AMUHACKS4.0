@@ -12,6 +12,7 @@ import Events from "./pages/Events";
 import Complaints from "./pages/Complaints";
 import DesignSystem from "./pages/DesignSystem";
 import NotFound from "./pages/NotFound";
+import MobileAppInfo from "./components/MobileAppInfo";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/events" element={<Events />} />
             <Route path="/complaints" element={<Complaints />} />
             <Route path="/design" element={<DesignSystem />} />
+            <Route path="/mobile-app" element={<MobileAppInfo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Route>
