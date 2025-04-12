@@ -11,6 +11,14 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      <div className="fixed bottom-4 right-4">
+        <a 
+          href="/design" 
+          className="bg-black/10 hover:bg-black/20 text-slate-700 px-3 py-1.5 rounded-full text-xs font-medium transition-colors"
+        >
+          Design System
+        </a>
+      </div>
     </div>
   );
 };
