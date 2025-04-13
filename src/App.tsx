@@ -16,33 +16,40 @@ import DesignSystem from "./pages/DesignSystem";
 import NotFound from "./pages/NotFound";
 import MobileAppInfo from "./components/MobileAppInfo";
 import About from "./pages/About";
+import { LanguageProvider } from "./contexts/LanguageContext";
+import { AccessibilityProvider } from "./contexts/AccessibilityContext";
+import "./accessibility.css";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/messages" element={<Messages />} />
-            <Route path="/community" element={<Community />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/complaints" element={<Complaints />} />
-            <Route path="/design" element={<DesignSystem />} />
-            <Route path="/mobile-app" element={<MobileAppInfo />} />
-            <Route path="/about" element={<About />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <LanguageProvider>
+      <AccessibilityProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route element={<Layout />}>
+                <Route path="/" element={<Index />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/messages" element={<Messages />} />
+                <Route path="/community" element={<Community />} />
+                <Route path="/events" element={<Events />} />
+                <Route path="/complaints" element={<Complaints />} />
+                <Route path="/design" element={<DesignSystem />} />
+                <Route path="/mobile-app" element={<MobileAppInfo />} />
+                <Route path="/about" element={<About />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </AccessibilityProvider>
+    </LanguageProvider>
   </QueryClientProvider>
 );
 
