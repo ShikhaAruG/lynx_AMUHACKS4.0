@@ -66,4 +66,4 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/328da75d-7251-4de5-b3ea-37d97842104d) and click on Share -> Publish.
+To run the project locally, open this https://preview--lynx-amuhacks40.lovable.app/
