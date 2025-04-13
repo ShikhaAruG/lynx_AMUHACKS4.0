@@ -15,6 +15,7 @@ import Complaints from "./pages/Complaints";
 import DesignSystem from "./pages/DesignSystem";
 import NotFound from "./pages/NotFound";
 import MobileAppInfo from "./components/MobileAppInfo";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/complaints" element={<Complaints />} />
             <Route path="/design" element={<DesignSystem />} />
             <Route path="/mobile-app" element={<MobileAppInfo />} />
+            <Route path="/about" element={<About />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Route>
