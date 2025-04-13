@@ -64,12 +64,24 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				janvoice: {
-					primary: '#2563eb',
-					secondary: '#10b981',
-					accent: '#f59e0b',
+					primary: '#168aad',   // Bondi blue
+					secondary: '#52b69a', // Keppel
+					accent: '#d9ed92',    // Mindaro
 					background: '#f8fafc',
 					text: '#1e293b',
-					muted: '#94a3b8'
+					muted: '#94a3b8',
+					
+					// New palette colors
+					mindaro: '#d9ed92',
+					lightgreen: '#b5e48c',
+					lightgreen2: '#99d98c',
+					emerald: '#76c893',
+					keppel: '#52b69a',
+					verdigris: '#34a0a4',
+					bondiblue: '#168aad',
+					cerulean: '#1a759f',
+					lapis: '#1e6091',
+					indigo: '#184e77'
 				}
 			},
 			borderRadius: {

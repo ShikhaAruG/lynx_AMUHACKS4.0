@@ -14,16 +14,16 @@ const Index = () => {
       <Features />
       <Testimonials />
       
-      <div className="bg-gradient-to-b from-white to-slate-50 py-12 px-4">
+      <div className="bg-gradient-to-b from-white to-janvoice-lightgreen/10 py-12 px-4">
         <div className="container mx-auto text-center">
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold rounded-full bg-blue-100 text-blue-700">
+          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold rounded-full bg-janvoice-verdigris text-white">
             Learn More
           </span>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">About Our Community</h2>
           <p className="max-w-2xl mx-auto mb-6 text-slate-600">
             Discover our team, previous projects, and impact. View images of our community initiatives and track our progress through complaint resolution metrics.
           </p>
-          <Button asChild variant="outline" className="flex gap-2 items-center">
+          <Button asChild variant="outline" className="flex gap-2 items-center bg-janvoice-bondiblue text-white hover:bg-janvoice-cerulean">
             <Link to="/about">
               <Info className="h-4 w-4" />
               About JanVoice
