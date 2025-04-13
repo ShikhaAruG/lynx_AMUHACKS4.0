@@ -6,8 +6,10 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { Languages } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface Language {
   code: string;
@@ -35,6 +37,7 @@ const LanguageSelector = ({
   currentLanguage = "en",
   onLanguageChange 
 }: LanguageSelectorProps) => {
+  const { t } = useLanguage();
   const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
   
   return (
@@ -46,6 +49,8 @@ const LanguageSelector = ({
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
+        <div className="px-2 py-1.5 text-sm font-semibold">{t("Language")}</div>
+        <DropdownMenuSeparator />
         {languages.map((language) => (
           <DropdownMenuItem
             key={language.code}
