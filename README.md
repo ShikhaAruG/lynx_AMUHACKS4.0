@@ -1,18 +1,15 @@
-# Welcome to your Lovable project
+# JanVoice
 
-## Project info
+JanVoice is a community-driven platform that allows citizens to engage in decision-making, volunteer for events, contribute to crowdfunding campaigns, and participate in real-time polls. The platform ensures accessibility, transparency, and security, making it easier for everyone to get involved and make an impact in their communities.
 
-**URL**: https://lovable.dev/projects/328da75d-7251-4de5-b3ea-37d97842104d
+## Features
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/328da75d-7251-4de5-b3ea-37d97842104d) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+- **Polls and Suggestions**: Users can vote on proposed events and projects, and submit suggestions for improvements.
+- **Idea Submission**: Citizens can submit their own ideas for new initiatives or improvements.
+- **Volunteering and Recognition**: Users can sign up for events and projects and receive public recognition for their contributions.
+- **Crowdfunding**: Allows users to contribute to projects, track funding progress, and see how funds are used.
+- **Project Updates**: Keep track of ongoing and past projects with transparent updates and progress.
+- **Accessibility**: Includes features like dyslexia-friendly fonts, color-blind-safe palettes, and screen reader support to ensure inclusivity.
 
 **Use your preferred IDE**
 
@@ -60,14 +57,13 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+  ## Challenges
+
+- Ensuring accessibility for users with disabilities (e.g., dyslexia, color blindness).
+- Implementing real-time polling and feedback systems.
+- Building crowdfunding functionality with transparent goal tracking.
+- Streamlining volunteer sign-ups and event participation.
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/328da75d-7251-4de5-b3ea-37d97842104d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
