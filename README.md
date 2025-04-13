@@ -67,3 +67,4 @@ This project is built with:
 ## How can I deploy this project?
 
 To run the project locally, open this https://preview--lynx-amuhacks40.lovable.app/
+#AMUHACKS 4.0 #CSSAMU #AMU
